@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: 'Arial', sans-serif;
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+#scroll-content {
+  position: relative;
+  height: 1800vh; /* 스크롤 여유 */
+  width: 1px;
+}
+#intro-text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.0rem;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.8s ease;
+  pointer-events: none;
+  z-index: 10;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+#intro-text.hidden {
+  opacity: 0;
+}
+/* 스크롤바 스타일 */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #000; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
+
+/* 최종 모드에서 스크롤 잠금용 */
+/* body.lock-scroll { overflow: hidden; } */

@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>3D Interactive Journey</title>
+<!DOCTYPE html> 
+ <html lang="ko"> 
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+   <title>3D Interactive Journey</title> 
   <link rel="stylesheet" href="./src/style.css"/>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.157.0/build/three.module.js"
+      }
+    }
+  </script>
 </head>
 <body>
   <div id="intro-text">
@@ -15,7 +22,8 @@
   <div id="scroll-content"></div>
 
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="./src/main.js"></script>
-</body>
+  <script type="module" src="/src/main.js"></script> </body>
 </html>
+
+
+

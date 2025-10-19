@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import '../style.css'
+import './style.css'
 
 // ==================== 기본 설정 ====================
 const scene = new THREE.Scene();
